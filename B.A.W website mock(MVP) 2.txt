@@ -1,0 +1,69 @@
+﻿B.A.W website/app structure (MVP)
+Goal: Allow sellers to register, list products and manage orders. Enable buyers to browse, purchase and track orders. Handle secure payments, global shipping and multilingual support.
+
+Core features (MVP)
+For Seller (SMEs)
+* Sign up/log in
+* Create store profile (logo/image, name, description, contact info, country, language)
+* Product upload (name, description, price, photo, stock quantity)
+* Basic inventory tracker
+* Order mangement (view orders, mark as shipped, mark as delivered)
+* Payment integration (e.g, paypal, cash options, other options)
+* Mobile friendly dashboard
+* Chat with buyers 
+For Buyers
+* Register/login
+* Browse stores and products (search + categories)
+* Product page (photos, description, price, “add to cart”, “buy now”)
+* Cart + checkout
+* Track orders
+* Multicurrency display
+* Contact seller button (via app chat)
+Admin Dashboard
+* View/manage orders
+* Aprove/reject sellers accounts
+* Track payment manually or via integration
+
+Homepage
+Top Navigation bar/Search bar 
+Logo|categories|search|cart|login/register
+Hero section:
+Big banner: “sell & shop product from around the world”
+Button: “start selling”/ “Browse products”
+Categories 
+Fashion| Beauty| crafts| food| electronics| Home decor| Beauty| accesories etc
+Featured stores
+Carousel with 3-5 top stores
+New Arrival
+Grid view of trending products, top selling, new products 
+product page
+* product images
+* Product title
+* Price(with currency switcher)
+* Description
+* Quantity selector
+* Add to cart button
+* Seller info
+* Share button
+* shipping info 
+* estimated delivery
+* related products
+Seller Dashboard(Mobile responsive page or app tab)
+* Add product(+ button)
+* My product list (edit/delete)
+* Orders (Pending/shipped/delivered)
+* Inventory warnings (e.g “low stock”)
+Buyer Flow 
+* Browse products
+* Click - product page
+* Add to cart
+* wishlist
+* Checkout: address + payment 
+* Receive order confirmation
+
+Tech Stack suggestions 
+* Frontend: React (for web/mobile), react native
+* Backend
+* Payment:Paypal, credit/debit card, Mtn, cash payment(same day delivery)
+
+
