@@ -4,8 +4,15 @@ URL configuration for BAW_back project.
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.http import HttpResponseRedirect
+
+
+def home_redirect(request):
+    return HttpResponseRedirect('http://localhost:3000/')
+
 
 urlpatterns = [
+    path('', home_redirect),
     path('admin/', admin.site.urls),
     
     # API endpoints
