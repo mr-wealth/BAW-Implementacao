@@ -19,10 +19,11 @@ const authSlice = createSlice({
     loginSuccess: (state, action) => {
       state.isLoading = false;
       state.user = action.payload.user;
-      state.token = action.payload.token;
+      state.token = action.payload.access;
       state.isAuthenticated = true;
       localStorage.setItem('user', JSON.stringify(action.payload.user));
-      localStorage.setItem('access_token', action.payload.token);
+      localStorage.setItem('access_token', action.payload.access);
+      localStorage.setItem('refresh_token', action.payload.refresh);
     },
     loginFailure: (state, action) => {
       state.isLoading = false;
@@ -38,10 +39,11 @@ const authSlice = createSlice({
     registerSuccess: (state, action) => {
       state.isLoading = false;
       state.user = action.payload.user;
-      state.token = action.payload.token;
+      state.token = action.payload.access;
       state.isAuthenticated = true;
       localStorage.setItem('user', JSON.stringify(action.payload.user));
-      localStorage.setItem('access_token', action.payload.token);
+      localStorage.setItem('access_token', action.payload.access);
+      localStorage.setItem('refresh_token', action.payload.refresh);
     },
   },
 });

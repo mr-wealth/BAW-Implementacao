@@ -1,0 +1,43 @@
+.app {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.app h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.app p {
+  color: #666;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.app h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+.app h3 {
+  color: #555;
+  margin-top: 20px;
+}
+
+.app code {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+.app ol {
+  line-height: 1.8;
+}
+
+.app li {
+  margin-bottom: 10px;
+  color: #333;
+}
