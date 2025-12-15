@@ -32,11 +32,11 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         return user
 
 class UserLoginSerializer(serializers.Serializer):
-    email = serializers.EmailField()
+    username = serializers.CharField()
     password = serializers.CharField(write_only=True)
     
     def validate(self, data):
-        user = authenticate(username=data['email'], password=data['password'])
+        user = authenticate(username=data['username'], password=data['password'])
         if not user:
             raise serializers.ValidationError('Invalid credentials')
         data['user'] = user

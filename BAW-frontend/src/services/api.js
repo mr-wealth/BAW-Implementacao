@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = import.meta.env.VITE_APP_API_URL || 'http://localhost:8000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -23,7 +23,7 @@ export default api;
 // Auth Services
 export const authService = {
   register: (userData) => api.post('/auth/register/', userData),
-  login: (email, password) => api.post('/auth/login/', { email, password }),
+  login: (username, password) => api.post('/auth/login/', { username, password }),
   logout: () => api.post('/auth/logout/'),
   refreshToken: () => api.post('/auth/refresh/'),
 };
