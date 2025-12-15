@@ -5,3 +5,8 @@ djangorestframework-simplejwt
 django-filter==24.1
 pillow
 python-decouple==3.8
+
+# Production dependencies
+psycopg2-binary>=2.9.6
+gunicorn>=21.2.0
+whitenoise>=6.5.0
